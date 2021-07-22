@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Details</title> 
+        <link rel="stylesheet" href="task3.css">
+        <!-- <script src="task3.js"></script>
+        <script src="app.js"></script>
+        <script src="app1.js"></script> -->
+    </head>
+    <body>
+        <h1>FORM</h1>
+        <form id="details" name="details">
+        
+            <div>
+                <label>NAME</label>
+                <input type="text" id="pname" placeholder="Name"><br>
+                <label>PHONE NUMBER</label>
+                <input type="number" id="phnum" placeholder="Number">
+                <br>
+                <input type="button" onclick="check()" value="Next" class="button">
+            </div>
+
+            <div style="display:none;" id="modelselect">
+                <h4>MODEL</h4>
+                <input type="radio" id="Basic" name="model-select">
+                <label>Basic</label><br>
+                <input type="radio" id="Smartphone" name="model-select">
+                <label>Smartphone</label>
+                <br>
+                <input type="button" onclick="model()" value="Next" class="button">
+            </div>
+
+            <div style="display:none;" name="sim-select" id="simselect">
+                <h4>SIM SLOT</h4>
+                <input type="radio" name="Sim-select" id="singleSim">
+                <label>Single sim</label><br>
+                <input type="radio" name="Sim-select" id="dualSim">
+                <label>Dual sim</label>
+                <br>
+                <input type="button" onclick="sim();setup()" value="Next" class="button">
+            </div>
+
+            <div style="display:none;" id="phonenum2">
+                <label>PHONE NUMBER2</label>
+                <input type="number" id="phnum2" placeholder="Number" class="button">
+            </div>
+
+            <div style="display:none;"  id="Smartphoneselect">
+                <h4>SMART PHONES</h4>
+                <input type="radio" name="Smartphon-eselect" id="android">
+                <label>Android</label><br>
+                <input type="radio" name="Smartphon-eselect" id="windows">
+                <label>Windows</label><br>
+                <input type="radio" name="Smartphon-eselect" id="ios">
+                <label>IOS</label>
+                <br>
+                <div style="display:none;" name="get-id" id="getid">
+                    <h4>ENTER YOUR ID</h4>
+                    <label>ID</label>
+                    <input type="number" name="id" id="smid"><br>
+                </div>
+                <input type="button" onclick="smphone();setup()" value="Next" class="button">
+            </div>
+
+            <div style="display:none;" id="bprocess">
+                <h4>BASIC PROCESS</h4>
+                <input type="radio" id="callb" name="b-process">
+                <label>Call</label><br>
+                <input type="radio" id="messageb" name="b-process">
+                <label>Message</label>
+                <br>
+                <input type="button" onclick="basicprocess()" value="Next" class="button">
+            </div>
+
+            <div style="display:none;" id="smprocess">
+                <h4>SMART PHONE PROCESS</h4>
+                <input type="radio" id="callsm" name="sm-process">
+                <label>Call</label><br>
+                <input type="radio" id="messagesm" name="sm-process">
+                <label>Message</label><br>
+                <input type="radio" id="vcsm" name="sm-process">
+                <label>Video call</label><br>
+                <input type="radio" id="mailsm" name="sm-process">
+                <label>Mail</label><br>
+                <input type="button" onclick="smartphprocess()" value="Next" class="button">
+            </div>
+
+            <div id="msg-send" style="display:none;">
+                <label>RECEIVER NUMBER</label>
+                <input type="number" id="rmnum"><br>
+                <label>MESSAGE</label>
+                <input type="text" id="msgtxt"><br>
+                <input type="button" onclick="message()" value="Send" class="button">
+            </div>
+
+            <div id="call-send" style="display:none;">
+                <label>RECEIVER NUMBER</label>
+                <input type="number" id="rcnum"><br>
+                <input type="button" onclick="call()" value="Call" class="button">
+            </div>
+
+            <div id="mail-send" style="display:none;">
+                <label>TO MAIL ID</label>
+                <input type="email" id="rmid"><br>
+                <textarea name="mail-body" id="msgtxt">Enter the content</textarea><br>
+                <input type="button" onclick="mail()" value="Send" class="button">
+            </div>
+
+            <div id="vc-send" style="display:none;">
+                <label>RECEIVER ID</label>
+                <input type="number" id="rvcid"><br>
+                <input type="button" onclick="videocall()" value="Call" class="button">
+            </div>
+
+            <div id="msg-send-dual" style="display:none;">
+                <label>RECEIVER NUMBER</label>
+                <input type="number" id="drmnum"><br>
+                <label>MESSAGE</label>
+                <input type="text" id="msgtxt"><br>
+                <label>Select the sim to send message</label><br>
+                <input type="radio" name="ph-select" id="mph1">
+                <label>Sim 1</label><br>
+                <input type="radio" name="ph-select" id="mph2">
+                <label>Sim 2</label><br>
+                <input type="button" onclick="DualSimmessage()" value="Send" class="button">
+            </div>
+
+            <div id="call-send-dual" style="display:none;">
+                <label>RECEIVER NUMBER</label>
+                <input type="number" id="drcnum"><br>
+                <label>Select the sim to call</label><br>
+                <input type="radio" name="ph-select" id="cmph1">
+                <label>Sim 1</label><br>
+                <input type="radio" name="ph-select" id="cmph2">
+                <label>Sim 2</label><br>
+                <input type="button" onclick="DualSimphonecall()" value="Call" class="button">
+            </div>
+        </form>
+        <script src="task3.js"></script>
+        <script src="app.js"></script>
+        <script src="app1.js"></script>
+    </body>
+</html>
