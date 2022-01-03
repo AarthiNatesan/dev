@@ -1,0 +1,13 @@
+.mixin(@color) {
+    color: @color;
+ }
+ 
+ .mixin(@color; @padding: 2) {
+    color: @color;
+    padding: @padding;
+ }
+ 
+ .myclass {
+    .mixin(red);
+ }
+ 

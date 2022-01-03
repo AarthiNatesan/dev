@@ -1,0 +1,13 @@
+.select + .select {
+  color: red;
+}
+.select .select {
+  color: green;
+}
+.select.select {
+  color: yellow;
+}
+.select,
+.select_class1 {
+  color: orange;
+}
