@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login input, .login .log_in {
+  width: 360px;
+  height: 52px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  background-color: #e6e1e1;
+}
+
+.facebook_content h1 {
+  font-size: 60px;
+  color: #166FE5;
+  font-weight: bolder;
+}
+
+.facebook_content p {
+  font-size: 25px;
+}
+
+.login {
+  width: 400px;
+  height: 370px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 14px 0px #979797;
+          box-shadow: 0 0 14px 0px #979797;
+}
+
+.login input {
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+.login .log_in {
+  background: #166FE5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.login .forget_ps {
+  padding: 10px 0;
+  color: #166FE5;
+}
+
+.login .btn {
+  width: 250px;
+  height: 52px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=facebook.css.map */
